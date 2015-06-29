@@ -1,4 +1,35 @@
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+Bundle 'flazz/vim-colorschemes'
+Bundle 'bling/vim-airline'
+Bundle 'tpope/vim-surround'
+Bundle 'mattn/emmet-vim'
+Bundle 'easymotion/vim-easymotion'
+Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'jelera/vim-javascript-syntax'
+Bundle 'tpope/vim-rails'
+
+call vundle#end()
+filetype plugin indent on
 syntax on
 
-" Wrap gitcommit file types at the appropriate length
-filetype indent plugin on
+set background=dark
+let g:airline_powerline_fonts = 1
+" set t_Co=256
+" set term=xterm-256color
+let g:solarized_termcolors=16
+colorscheme solarized
+
+set number
+set tabstop=2
+
+" Mappings 
+let mapleader=";"
+command NTO NERDTreeTabsOpen

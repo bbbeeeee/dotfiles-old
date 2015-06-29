@@ -152,5 +152,16 @@ then
   fi
 fi
 
+# clone my oh-my-zsh
+# make my zshrc symlink do everything for the oh-my-zsh instead of its stuff.
+# rm -r ~/.oh-my-zsh
+if [ -d "$HOME/.oh-my-zsh" ]; then
+	cd ~/.oh-my-zsh
+	git pull
+else
+	rm -rf ~/.oh-my-zsh
+	git clone https://github.com/btroo/oh-my-zsh ~/.oh-my-zsh
+fi
+
 echo ''
 echo '  All installed!'
