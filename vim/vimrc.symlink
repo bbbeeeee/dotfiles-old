@@ -15,7 +15,10 @@ Bundle 'easymotion/vim-easymotion'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'tpope/vim-rails'
+Bundle 'pangloss/vim-javascript'
+Bundle 'Raimondi/delimitMate'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'nathanaelkane/vim-indent-guides'
 
 call vundle#end()
 filetype plugin indent on
@@ -31,6 +34,7 @@ colorscheme solarized
 set number
 set tabstop=2
 set shiftwidth=4
+set softtabstop=2
 set expandtab
 
 " Mappings 
