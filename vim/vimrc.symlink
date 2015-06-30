@@ -15,6 +15,7 @@ Bundle 'easymotion/vim-easymotion'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'tpope/vim-rails'
+Bundle 'Valloric/YouCompleteMe'
 
 call vundle#end()
 filetype plugin indent on
@@ -29,6 +30,8 @@ colorscheme solarized
 
 set number
 set tabstop=2
+set shiftwidth=4
+set expandtab
 
 " Mappings 
 let mapleader=";"
