@@ -33,10 +33,12 @@ colorscheme solarized
 
 set number
 set tabstop=2
-set shiftwidth=4
-set softtabstop=2
+set shiftwidth=2
 set expandtab
 
 " Mappings 
 let mapleader=";"
 command NTO NERDTreeTabsOpen
+
+" File stuff
+autocmd BufRead,BufNewFile *.xtx set filetype=tex
