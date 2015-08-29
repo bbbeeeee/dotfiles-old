@@ -1,3 +1,5 @@
+let mapleader=","
+
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle/
@@ -5,9 +7,10 @@ call vundle#begin()
 
 Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/syntastic'
-Bundle 'flazz/vim-colorschemes'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-surround'
 Bundle 'mattn/emmet-vim'
@@ -22,21 +25,27 @@ Bundle 'nathanaelkane/vim-indent-guides'
 
 call vundle#end()
 filetype plugin indent on
-syntax on
+syntax enable
 
 set background=dark
 let g:airline_powerline_fonts = 1
 " set t_Co=256
 " set term=xterm-256color
 let g:solarized_termcolors=16
+" let g:solarized_visibility = "high"
+" let g:solarized_contrast = "high"
 colorscheme solarized
 
 set number
 set tabstop=2
-set shiftwidth=4
+set shiftwidth=2
 set softtabstop=2
 set expandtab
 
+au FileType html setl sw=2 sts=2 et
+
 " Mappings 
-let mapleader=";"
 command NTO NERDTreeTabsOpen
+set backspace=indent,eol,start
+
+let g:syntastic_html_tidy_ignore_errors=["<ion-", "discarding unexpected </ion-", " proprietary attribute \"ng-"]
