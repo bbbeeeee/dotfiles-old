@@ -16,12 +16,18 @@ Bundle 'tpope/vim-surround'
 Bundle 'mattn/emmet-vim'
 Bundle 'easymotion/vim-easymotion'
 Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'jelera/vim-javascript-syntax'
 Bundle 'tpope/vim-rails'
-Bundle 'pangloss/vim-javascript'
 Bundle 'Raimondi/delimitMate'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'heavenshell/vim-jsdoc'
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'othree/yajs'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'garbas/vim-snipmate'
+Bundle 'honza/vim-snippets'
+Bundle 'moll/vim-node'
 
 call vundle#end()
 filetype plugin indent on
@@ -43,7 +49,7 @@ set softtabstop=2
 set expandtab
 
 au Filetype html setl sw=4 sts=4 et
-au Filetype javascript setlocal ts=4 sts=4 sw=4
+au Filetype javascript setlocal ts=2 sts=0 expandtab sw=2
 
 " Mappings 
 command NTO NERDTreeTabsOpen
@@ -57,3 +63,13 @@ autocmd BufRead,BufNewFile *.xtx set filetype=tex
 
 " NERDTree
 let NERDTreeShowHidden=1
+
+" ctrl p
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlPMixed'
+
+" Taboo
+command TO TabooOpen
+command TR TabooRename
