@@ -54,7 +54,7 @@ plugins=(git)
 
 # User configuration
 
-# export PATH="/home/brandon/bin:/usr/local/bin:/home/brandon/.rvm/gems/ruby-2.2.1/bin:/home/brandon/.rvm/gems/ruby-2.2.1@global/bin:/home/brandon/.rvm/rubies/ruby-2.2.1/bin:/home/brandon/.nvm/versions/node/v0.12.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/brandon/Android/Sdk/tools:/home/brandon/Android/Sdk/platform-tools:/home/brandon/Android/Sdk/build-tools:/home/brandon/.rvm/bin:/home/brandon/.rvm/bin:/home/brandon/.rvm/bin"
+PATH="/home/brandon/bin:/usr/local/bin:/home/brandon/.rvm/gems/ruby-2.2.1/bin:/home/brandon/.rvm/gems/ruby-2.2.1@global/bin:/home/brandon/.rvm/rubies/ruby-2.2.1/bin:/home/brandon/.nvm/versions/node/v0.12.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/brandon/Android/Sdk/tools:/home/brandon/Android/Sdk/platform-tools:/home/brandon/Android/Sdk/build-tools:/home/brandon/.rvm/bin:/home/brandon/.rvm/bin:/home/brandon/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -91,3 +91,9 @@ export PATH=/Users/brandon/Library/Android/sdk/platform-tools:/Users/brandon/Lib
 ### Go stuff
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+### Terraform
+export PATH=$PATH:~/bin/terraform
+
+### Sublime
+export PATH=$PATH:/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/
