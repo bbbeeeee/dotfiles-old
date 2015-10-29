@@ -22,6 +22,7 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'Raimondi/delimitMate'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'fatih/vim-go'
 
 call vundle#end()
 filetype plugin indent on
