@@ -57,6 +57,7 @@ set backspace=indent,eol,start
 
 " ionic ignore html errors
 let g:syntastic_html_tidy_ignore_errors=["<ion-", "discarding unexpected </ion-", " proprietary attribute \"ng-"]
+let g:syntastic_javascript_checkers = ['eslint']
 
 " File stuff
 autocmd BufRead,BufNewFile *.xtx set filetype=tex
@@ -69,7 +70,3 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPMixed'
-
-" Taboo
-command TO TabooOpen
-command TR TabooRename
