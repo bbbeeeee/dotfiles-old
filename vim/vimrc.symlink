@@ -28,6 +28,7 @@ Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
 Bundle 'moll/vim-node'
+Bundle 'godlygeek/tabular'
 
 call vundle#end()
 filetype plugin indent on
@@ -53,7 +54,12 @@ au Filetype javascript setlocal ts=2 sts=0 expandtab sw=2
 
 " Mappings 
 command NTO NERDTreeTabsOpen
+command Tb Tabularize
 set backspace=indent,eol,start
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " ionic ignore html errors
 let g:syntastic_html_tidy_ignore_errors=["<ion-", "discarding unexpected </ion-", " proprietary attribute \"ng-"]
